@@ -1,0 +1,62 @@
+{
+  "students": [
+    {
+      "id": "1",
+      "name": "Ahmed",
+      "email": "ahmed@example.com",
+      "password": "hashed_password_here"
+    },
+    {
+      "id": "2",
+      "name": "Salim",
+      "email": "salim@example.com",
+      "password": "hashed_password_here"
+    },
+    {
+      "id": "3",
+      "name": "Fatma",
+      "email": "fatma@example.com",
+      "password": "hashed_password_here"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "1",
+      "studentId": "1",
+      "date": "2023-09-28T10:00:00Z"
+    },
+    {
+      "id": "2",
+      "studentId": "2",
+      "date": "2023-09-28T10:00:00Z"
+    },
+    {
+      "id": "3",
+      "studentId": "3",
+      "date": "2023-09-29T10:00:00Z"
+    }
+  ],
+  "uploadfiles": [
+    {
+      "id": "1",
+      "filename": "uploads/file1.txt",
+      "originalname": "file1.txt",
+      "uploaderId": "1",
+      "uploadDate": "2023-09-28T12:00:00Z"
+    },
+    {
+      "id": "2",
+      "filename": "uploads/file2.jpg",
+      "originalname": "file2.jpg",
+      "uploaderId": "2",
+      "uploadDate": "2023-09-28T12:30:00Z"
+    },
+    {
+      "id": "3",
+      "filename": "uploads/file3.pdf",
+      "originalname": "file3.pdf",
+      "uploaderId": "3",
+      "uploadDate": "2023-09-29T11:00:00Z"
+    }
+  ]
+}

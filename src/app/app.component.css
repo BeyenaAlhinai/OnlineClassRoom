@@ -1,0 +1,6 @@
+/* Add this to your global styles or component styles */
+.navbar-nav .nav-item.active {
+    background-color: #e0dddd; /* Change to the desired highlight color */
+    border-radius: 5px; /* Add rounded corners for a nice effect */
+  }
+  

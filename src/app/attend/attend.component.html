@@ -1,0 +1,87 @@
+<html>
+<head>
+<style>
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even){background-color: #e4e2e2}
+
+th {
+  background-color: #aaabae;
+  color: white;
+}
+</style>
+</head>
+<body>
+
+    <h2 style="text-align: center;">Attendance Data</h2> <br>
+
+<table>
+
+    <thead  >
+        <tr>
+          <th style="text-align: center;
+          padding: 8px;">ID</th>
+          <th style="text-align: center;
+          padding: 8px;">Student ID</th>
+          <th style="text-align: center;
+          padding: 8px;">Student Name</th>
+          <th style="text-align: center;
+          padding: 8px;">Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let attendanceRecord of attendanceData">
+          <td style="text-align: center;
+          padding: 8px;">{{ attendanceRecord.id }}</td>
+          <td style="text-align: center;
+          padding: 8px;">{{ attendanceRecord.studentId }}</td>
+          <td style="text-align: center;
+          padding: 8px;">{{ getStudentName(attendanceRecord.studentId) }}</td>
+          <td style="text-align: center;
+          padding: 8px;">{{ attendanceRecord.date | date:'medium' }}</td>
+        </tr>
+      </tbody>
+</table>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

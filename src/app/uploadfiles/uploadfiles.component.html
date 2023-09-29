@@ -1,0 +1,26 @@
+<div class="center-container">
+    <div class="upload-container " style="border-color: rgb(0, 21, 255); ">
+      <label for="fileInput" class="file-label">
+        
+        <i class="fas fa-upload"></i> Choose a file:
+      </label>
+      <input type="file" id="fileInput" (change)="onFileSelected($event)" /> <br> <br>
+  
+      <button (click)="uploadFile()" class="upload-button" >
+        <i class="fas fa-upload"></i> Upload File
+      </button>
+  
+      <div *ngIf="selectedFile" class="file-info">
+        <strong>Selected File:</strong> {{ selectedFile.name }}
+      </div>
+  
+      <div *ngIf="uploadError" class="error-message">
+        <strong>Error:</strong> {{ uploadError }}
+      </div>
+  
+      <div *ngIf="uploadSuccess" class="success-message">
+        <strong>Success:</strong> File Uploaded Successfully!
+      </div>
+    </div>
+    <img src="assets\54.jpg" width="700" height="500">
+  </div>
